@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love For You | Valentine's Day</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./style.css'>
+    <script src='./script.js' defer></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-glow" aria-hidden="true"></div>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-text cursive">My Love</span>
+                <span class="logo-heart" aria-hidden="true">💖</span>
+                <span class="logo-tag">Harshuu</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#letter" class="nav-link" data-letter-page="my">Love Letter</a></li>
+                    <li><a href="#letter" class="nav-link" data-letter-page="her">Her Letter</a></li>
+                    <li><a href="#gallery" class="nav-link">Our Gallery</a></li>
+                    <li><a href="#game" class="nav-link">Memory Game</a></li>
+                    <li><a href="#countdown" class="nav-link">Countdown</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-orbs" aria-hidden="true">
+            <span class="orb orb-1"></span>
+            <span class="orb orb-2"></span>
+            <span class="orb orb-3"></span>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        A day to celebrate us
+                    </div>
+                    <h1 class="cursive">Happy Valentine's Day, Harshyaaaaa!</h1>
+                    <p>Every moment with you is a treasure. Today and every day, I celebrate the incredible person you are and the beautiful love we share.</p>
+                    <div class="hero-actions">
+                        <button class="heart-btn" id="surpriseBtn" type="button">
+                            <span class="heart-btn-icon" aria-hidden="true">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="heart-btn-text">Click for a Surprise!</span>
+                        </button>
+                        <button class="valentine-ask-btn" id="valentineBtn" type="button">
+                            <span class="valentine-ask-icon" aria-hidden="true">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </span>
+                            <span class="valentine-ask-text">Will you be my Valentine?</span>
+                        </button>
+                        <button class="notes-btn" id="notesBtn" type="button">
+                            <span class="notes-btn-icon" aria-hidden="true">
+                                <i class="fas fa-list-check"></i>
+                            </span>
+                            <span class="notes-btn-text">Points Which I Noted Down</span>
+                        </button>
+                        <a class="ghost-btn" href="#gallery">See Our Memories</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-value">365+</span>
+                            <span class="stat-label">Sweet Moments</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">∞</span>
+                            <span class="stat-label">Love Shared</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">Us</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="glass-card">
+                        <div class="glass-header">
+                            <span class="glass-title">Our Story</span>
+                            <span class="glass-heart">💖</span>
+                        </div>
+                        <div class="mini-gallery">
+                            <span class="mini-shot" style="background-image: url('./images/Firstdate.jpeg');"></span>
+                            <span class="mini-shot" style="background-image: url('./images/laughs.jpeg');"></span>
+                            <span class="mini-shot" style="background-image: url('./images/sunset.jpeg');"></span>
+                        </div>
+                        <div class="love-note">
+                            You + Me = Every favorite moment
+                        </div>
+                    </div>
+                    <div class="floating-chip chip-1">First Date</div>
+                    <div class="floating-chip chip-2">Sunset Walks</div>
+                    <div class="floating-chip chip-3">Endless Laughs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section id="letter">
+        <div class="container">
+            <h2 class="section-title cursive">My Love Letter to You</h2>
+
+            <div class="letter-pager" id="letterPager" data-page="my">
+                <div class="letter-controls" aria-label="Letter pages">
+                    <button class="letter-control-btn" id="letterPrev" type="button" aria-label="Previous page">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                        Prev
+                    </button>
+                    <div class="letter-indicator" id="letterIndicator" aria-live="polite">1 / 2</div>
+                    <button class="letter-control-btn primary" id="letterNext" type="button" aria-label="Next page">
+                        Next
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="letter-pages">
+                    <article class="love-letter letter-page is-active" data-letter="my" aria-label="My letter">
+                        <div class="letter-content">
+                            <p>My Dearest, Dr. Harshitha Pai</p>
+                            <p>I hope this letter finds you well — because I’m certainly not. Your smile, your kindness, the warmth in your eyes, your intelligence, and the way you care about people have completely ruined my peace.</p>
+                            <p>I love Youuuu my Gonduuu! bana di na mujhe bhi konkani. Dekh maine apne liye already Vesti dekh liya hai bas ek Haa ka intezaar hai, direct lungi me entry lunga pai nivaas me.</p>
+                            <p>Bhai sach bolu toh it feels like such an achievement ki hum yahan tak aa gaye, woh bhi itne hazaar jhagde aur kalesh ke baad. Har fight, har misunderstanding, har rough phase ke baad bhi humne ek dusre ka haath nahi chhoda. Shayad life ka maza hi yehi hai na? Perfect hona zaroori nahi hota, saath rehna zaroori hota hai. Agar sab easy hota toh shayad itna special bhi nahi lagta. Inhi fights, inhi patch-ups, inhi emotional moments mein hi toh hamari asli story bani hai. Kyu, Sahi baat hai na?</p>
+                            <p>Kya pata tha national park ka woh ek dusre ke peeche bhagna will turn into reality. Kya pata tha woh bhivpuri me ek dusre ka haath pakadna will turn into reality. Kya pata tha burger king me lottery such me lag jayegi. Idk hum aur kitna aage tak jayenge but I will Alwaysssss be greatful of this relationship.</p>
+                            <p>Today, I want to promise you that my love for you will continue to grow with each passing day. I'm so grateful to have you in my life, and I look forward to creating countless more beautiful memories together. I think i brought back our letters wala era.</p>
+                            <p>Happy Valentine's Day, my love.</p>
+                        </div>
+                        <div class="letter-signature cursive">
+                            Forever Yours,<br>
+                            <span id="boyfriendName"> Ajju </span>
+                        </div>
+                        <div class="letter-actions">
+                            <button class="ghost-btn" id="letterNextBtn" type="button">Next Page: Her Letter</button>
+                        </div>
+                    </article>
+
+                    <article class="love-letter her-letter letter-page" data-letter="her" aria-label="Her letter">
+                        <div class="letter-content">
+                            <p>From Gondappi,</p>
+                            <p>Happyy Valentine's Baby &#x1FAF6; it's our 2nd valentine's together and we've come a long way. Pichle saal issi time pe we were in different zones and abhi bhi technically zones toh alag hi hai but time frame together has reduced, life is just going on.</p>
+                            <p>We fight, we argue, we misunderstand, we debate over things, we have different choice of opinions, we ideate differently lekin jab baat aati hai to let go off each other we try bouncing back.</p>
+                            <p>This valentine's week was pretty hectic considering your stressful sprint and my exams - but I think we managed to float around.</p>
+                            <p>Maybe long distance is difficult, maybe not seeing each other for months together is even worse and our family restrictions to say the less but har baar jab meet hota hai ek alag sukoon milta hai, feels like all the battles we had have shut down and now it's just the two of us!!!</p>
+                            <p>Bohot si cheezein milke karenge waale folder me rehjaata hai and milne ke baad scene hi kuch or rehta hai but I hope hum sabkuch ekdin tick kar paaye and things workout in our favour.. humara destiny kya hoga wo toh pata nahi but jitna time saath rehne milega koshish rahegi that we make the most of it bcoz together is definitely the best place to be..</p>
+                            <p>I love you might be an understatement for me to say it to my saviour, my cheerleader, my mood uplifter, my stand-up comedian, my word-play gamer, my bank, my motivator, my 'makes me cry and not make it up' person but also my bf. You play roles you don't even realise.</p>
+                            <p>This letter is also to the hardworking boy who is putting his sweat into making his family proud and the person who is going to change the lineage of his family!!! I am super proud of you no matter where I am.</p>
+                            <p>Cheers to youu!! Cheers to us &#x2764;&#xFE0F; &#x1FAC2;</p>
+                        </div>
+                        <div class="letter-footer">
+                            <figure class="letter-figure" aria-hidden="true">
+                                <img class="letter-photo" src="./images/us.jpeg" alt="" loading="lazy" decoding="async" />
+                            </figure>
+                            <div class="letter-signature cursive">
+                                Forever Yours,<br>
+                                <span>Harshitha</span>
+                            </div>
+                        </div>
+                        <div class="letter-actions">
+                            <button class="ghost-btn" id="letterBackBtn" type="button">Back to My Letter</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Photo Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title cursive">Our Beautiful Memories</h2>
+            <p class="gallery-kicker">Abhi tap kar ye cards full-screen me dekhne ke liye — Tu filter bhi kar sakti to relive a vibe.</p>
+            <div class="gallery-controls" aria-label="Gallery controls">
+                <div class="chip-row" role="tablist" aria-label="Gallery filters">
+                    <button class="chip active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="chip" type="button" data-filter="dates" role="tab" aria-selected="false">Dates</button>
+                    <button class="chip" type="button" data-filter="trips" role="tab" aria-selected="false">Trips</button>
+                    <button class="chip" type="button" data-filter="moments" role="tab" aria-selected="false">Moments</button>
+                    <button class="chip" type="button" data-filter="celebrations" role="tab" aria-selected="false">Celebrations</button>
+                </div>
+                <div class="gallery-actions">
+                    <label class="gallery-search" aria-label="Search memories">
+                        <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                        <input id="gallerySearch" type="search" placeholder="Search memories..." autocomplete="off" />
+                    </label>
+                    <button id="shuffleGallery" class="gallery-btn" type="button">
+                        <i class="fas fa-shuffle" aria-hidden="true"></i>
+                        Shuffle
+                    </button>
+                    <div class="gallery-count" aria-live="polite">
+                        <span id="galleryCount">0 memories</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="photoGallery">
+                <!-- Photos will be added by JavaScript -->
+            </div>
+            <div class="gallery-more" id="galleryMore">
+                <button id="viewMoreGallery" class="gallery-btn ghost" type="button">View more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Game -->
+    <section id="game">
+        <div class="container">
+            <h2 class="section-title cursive">The Love Vault</h2>
+            <p class="game-kicker">Seals match karo, cute notes unlock karo—aur meri “tumhe itna adore kyun karta hoon” wali chhoti‑chhoti reasons collect karo.</p>
+
+            <div class="game-shell">
+                <div class="game-main">
+                    <div class="game-toolbar">
+                        <div class="game-stats">
+                            <div class="pill">Moves <span id="movesCount">0</span></div>
+                            <div class="pill">Matches <span id="matchesCount">0</span>/<span id="matchesTotal">8</span></div>
+                            <div class="pill">Time <span id="timeCount">00:00</span></div>
+                            <div class="pill">Streak <span id="streakCount">0</span></div>
+                        </div>
+                        <div class="game-controls">
+                            <label class="difficulty">
+                                <span class="sr-only">Difficulty</span>
+                                <select id="difficultySelect" aria-label="Difficulty">
+                                    <option value="sweet" selected>Sweet (4x4)</option>
+                                    <option value="spicy">Spicy (5x4)</option>
+                                    <option value="wild">Wild (6x4)</option>
+                                </select>
+                            </label>
+                            <button id="hintGame" class="game-btn ghost" type="button">
+                                <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                                Nai samajha toh isko daba
+                            </button>
+                            <button id="shuffleGame" class="game-btn ghost" type="button">
+                                <i class="fas fa-shuffle" aria-hidden="true"></i>
+                                Shuffle
+                            </button>
+                            <button id="resetGame" class="game-btn primary" type="button">
+                                <i class="fas fa-rotate-right" aria-hidden="true"></i>
+                                New Game
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="memory-board love-board" id="memoryBoard" aria-label="Love Vault board">
+                        <!-- Cards will be added by JavaScript -->
+                    </div>
+                </div>
+
+                <aside class="love-log" aria-label="Unlocked love notes">
+                    <div class="love-log-header">
+                        <div>
+                            <div class="love-log-title">Unlocked Notes</div>
+                            <div class="love-log-sub">Every match opens a tiny chapter.</div>
+                        </div>
+                        <div class="love-best">
+                            Best <span id="bestScore">—</span>
+                        </div>
+                    </div>
+                    <div id="loveNotes" class="love-notes" aria-live="polite"></div>
+                </aside>
+            </div>
+
+            <div class="game-win" id="gameWin" hidden>
+                <div class="win-card" role="dialog" aria-modal="true" aria-label="You won">
+                    <div class="win-title cursive">Vault Unlocked</div>
+                    <div class="win-sub" id="winSummary">You did it!</div>
+                    <div class="win-actions">
+                        <button id="playAgain" class="game-btn primary" type="button">Play Again</button>
+                        <a class="game-btn ghost" href="#countdown">Go to Countdown</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section id="countdown">
+        <div class="container">
+            <div class="countdown">
+                <div class="countdown-bg" aria-hidden="true"></div>
+                <div class="countdown-head">
+                    <div class="countdown-title cursive">Countdown to Our Next Anniversary</div>
+                    <div class="countdown-sub">
+                        Next date:
+                        <span class="countdown-date" id="anniversaryDate">—</span>
+                    </div>
+                </div>
+
+                <div class="timer">
+                    <div class="timer-box" data-unit="days">
+                        <div class="timer-value" id="days">00</div>
+                        <div class="timer-label">Days</div>
+                    </div>
+                    <div class="timer-box" data-unit="hours">
+                        <div class="timer-value" id="hours">00</div>
+                        <div class="timer-label">Hours</div>
+                    </div>
+                    <div class="timer-box" data-unit="minutes">
+                        <div class="timer-value" id="minutes">00</div>
+                        <div class="timer-label">Minutes</div>
+                    </div>
+                    <div class="timer-box" data-unit="seconds">
+                        <div class="timer-value" id="seconds">00</div>
+                        <div class="timer-label">Seconds</div>
+                    </div>
+                </div>
+
+                <div class="countdown-progress" aria-label="Countdown progress">
+                    <div class="progress-track" aria-hidden="true">
+                        <div class="progress-bar" id="countdownProgressBar"></div>
+                    </div>
+                    <div class="progress-meta">
+                        <span id="countdownMessage">Counting down...</span>
+                        <span class="progress-pct" id="countdownProgressLabel">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-bg" aria-hidden="true"></div>
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-mark cursive">Forever Yours</div>
+                    <div class="footer-line cursive">My love for you is endless</div>
+                    <div class="footer-sub">
+                        Made with <i class="fas fa-heart" aria-hidden="true"></i> for the most amazing person in my life
+                    </div>
+                </div>
+                <div class="footer-actions">
+                    <button id="footerLoveBtn" class="footer-btn primary" type="button">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        Send Love
+                    </button>
+                    <a class="footer-btn ghost" href="#home" id="backToTop">
+                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                        Back to Top
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider" aria-hidden="true"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-mini">
+                    <span class="footer-heart-icon" aria-hidden="true"><i class="fas fa-heart"></i></span>
+                </div>
+                <div class="footer-copy">© <span id="footerYear">2023</span> Forever Yours</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Photo Modal -->
+    <div class="modal" id="photoModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="Enlarged photo">
+    </div>
+
+    <!-- Surprise Overlay -->
+    <div class="surprise-overlay" id="surpriseOverlay" hidden>
+        <div class="surprise-card" role="dialog" aria-modal="true" aria-label="Surprise message">
+            <button class="surprise-close" id="surpriseClose" type="button" aria-label="Close">&times;</button>
+            <div class="surprise-title cursive" id="surpriseTitle">A little surprise</div>
+            <div class="surprise-body" id="surpriseBody"></div>
+            <div class="surprise-actions">
+                <button class="surprise-btn" id="surpriseMore" type="button">
+                    <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                    Another One
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Overlay -->
+    <div class="notes-overlay" id="notesOverlay" hidden>
+        <div class="notes-card" role="dialog" aria-modal="true" aria-label="Points to note">
+            <button class="notes-close" id="notesClose" type="button" aria-label="Close">&times;</button>
+            <div class="notes-title cursive">Points Which I Noted Down</div>
+            <div class="notes-sub" id="notesSub">Tiny reminders, big smiles.</div>
+            <ul class="notes-list" id="notesList" aria-live="polite"></ul>
+            <div class="notes-actions">
+                <button class="notes-action-btn" id="notesOkay" type="button">
+                    <i class="fas fa-check" aria-hidden="true"></i>
+                    Got it
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Valentine Overlay -->
+    <div class="valentine-overlay" id="valentineOverlay" hidden>
+        <div class="valentine-card" role="dialog" aria-modal="true" aria-label="Valentine question">
+            <button class="valentine-close" id="valentineClose" type="button" aria-label="Close">&times;</button>
+            <div class="valentine-title cursive">Will you be my Valentine?</div>
+            <div class="valentine-body">
+                <div class="valentine-note" id="valentineNote">
+                    I promise to bring snacks, chocolates, hugs, and way too many compliments.
+                </div>
+                <div class="valentine-choice" id="valentineChoice" aria-label="Choose yes or no">
+                    <button class="valentine-choice-btn yes" id="valentineYes" type="button">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        Yes
+                    </button>
+                    <button class="valentine-choice-btn no" id="valentineNo" type="button">
+                        <i class="fas fa-face-grin-beam-sweat" aria-hidden="true"></i>
+                        No
+                    </button>
+                </div>
+                <div class="valentine-status" id="valentineStatus" aria-live="polite"></div>
+                <div class="valentine-footer">
+                    <button class="valentine-mini-btn" id="valentineReset" type="button">
+                        Reset Answer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
